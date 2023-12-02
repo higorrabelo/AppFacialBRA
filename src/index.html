@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./public/css/bootstrap.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="" class="navbar-brand m-2" id="mover">Bra Facial</a>
+        <div class="m-2">
+          <input class="btn btn-success" type="button" value="+" onclick="maximizar()">
+          <input class="btn btn-warning" type="button" value="-" onclick="minimizar()">
+          <input class="btn btn-danger" type="button" value="X" onclick="sair()">
+        </div>
+    </nav>
+    <div class="container d-flex justify-content-center">
+     <div class="row mt-4">
+      <div class="col-6">
+        <form action="">
+          <form action="" method="post" enctype="multipart/form-data">
+  
+            <h1>Cadastro de usuário</h1>
+  
+            <label for="nome">Nome:</label>
+            <input class="form-control" type="text" id="nome" name="nome" required>
+        
+            <br>
+        
+            <label for="email">Email:</label>
+            <input class="form-control" type="email" id="email" name="email" required>
+        
+            <br>
+        
+            <label for="senha">Senha:</label>
+            <input class="form-control" type="password" id="senha" name="senha" required>
+        
+            <br>
+        
+            <label for="cpf">CPF:</label>
+            <input class="form-control" type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="123.456.789-01" required>
+            <small>Formato: 123.456.789-01</small>
+            <br>
+            <br>
+            <hr>  
+            <input type="button" onclick="cadastrar()" value="Cadastrar">
+          </form>
+        </form>
+      </div>
+      <div class="col-6">
+          <video src="" id="video" height="480" width="640" autoplay></video>
+          <input type="button" value="Tirar Foto" id="captura">
+          <canvas id="canvas" height="480" width="640"></canvas>
+      </div>
+      <button onclick="teste()">Aqui</button>
+     </div>
+     
+    </div>
+  
+  <script src="./public/js/bootstrap.bundle.js"></script>
+  <script src="./renderer.js"></script>
+  </body>
+</html>
